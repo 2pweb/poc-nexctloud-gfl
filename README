@@ -1,0 +1,51 @@
+README PROOF OF CONCEPT INTEGRATION NEXTCLOUD WITH CONSERVAZIONE A NORMA (POC NEXTCLOUD)
+---------------------------------------------------------------------------------
+The file conservazioneanorma.tar needs to be untared from inside of the Nextcloud app dir.
+cd <nextcloud> dir
+tar xvf conservazioneanorma.tar
+
+
+FILES APP
+====================================================
+The core files app has been modified to incorporate the interactions for "Conservazione a Norma"
+modifications to files:
+   ajax/conservazionenorma.php
+   appinfo/route.php
+   css/styles.css
+   img/can.svg
+   js/app.js
+   js/can.js
+   js/fileactions.js
+   js/filelist.js
+   js/files.js   
+   js/script.js
+   js/templates.js
+   lib/Appinfo/Application.php  
+   templates/canlist.php
+   templates/appnavigation.php
+   templates/index.php
+   templates/list.php
+
+
+CONSERVAZIONE A NORMA APP
+====================================================
+The APP will need to be installed directly into the apps directory after installing nextcloud
+To configure the plugin after "Enabling" the APP you will need to go into the settings "Conservazione a norma" in the Personal Area.
+Insert your email and password obtained from gfl.unimaticaspa.it
+Push "Prova" to test if the login is correct
+if the login is correct Save the Credentials.
+
+SENDING A FILE (FOR POC - Only "documento_generico" enabled)
+====================================================
+From the file list the either a right click or actions menu will show "Invia a Conservazione a Norma" will appear.
+Fill out the form for the metadata.
+
+
+PLUGIN SSO LOGIN HAS BEEN INSTALLED
+====================================================
+With the SSO plugin enabled the login page will automatically redirect you to the SSO login page for GFL
+https://sso-staging.giuffre.it/openam/XUI/?realm=gflcloud&spEntityID=https%3A%2F%2Fpoc-nextcloud-gfl.space%2Findex.php%2Fapps%2Fuser_saml%2Fsaml%2Fmetadata&goto=https%3A%2F%2Fsso-staging.giuffre.it%2Fopenam%2FSSOPOST%2FmetaAlias%2Fgflcloud%2Fidp%3FReqID%3DONELOGIN_d56dc7a28943eccac6d5196cdb7b0891c2d41e7d%26index%3Dnull%26acsURL%3Dhttps%253A%252F%252Fpoc-nextcloud-gfl.space%252Findex.php%252Fapps%252Fuser_saml%252Fsaml%252Facs%26spEntityID%3Dhttps%253A%252F%252Fpoc-nextcloud-gfl.space%252Findex.php%252Fapps%252Fuser_saml%252Fsaml%252Fmetadata%26binding%3Durn%253Aoasis%253Anames%253Atc%253ASAML%253A2.0%253Abindings%253AHTTP-POST#login/
+
+Per accedere direttamente la pagina login sarà da utilizzare 
+https://poc-nextcloud-gfl.space/index.php/login?prova&direct=1
+

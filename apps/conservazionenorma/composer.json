@@ -1,0 +1,15 @@
+{
+    "name": "Conservazione Norma",
+    "description": "Conservazione a norma",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Lannie yap"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}

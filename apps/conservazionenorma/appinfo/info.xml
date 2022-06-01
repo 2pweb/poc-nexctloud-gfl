@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+   <id>conservazionenorma</id>
+   <name>Conservazione A Norma</name>
+   <summary>Conservazione a norma</summary>
+   <description><![CDATA[Conservazione a norma]]></description>
+   <version>0.0.1</version>
+   <licence>agpl</licence>
+   <author mail="lannie.yap@gmail.com" >Lannie yap</author>
+   <namespace>ConservazioneNorma</namespace>
+   <category>customization</category>
+   <category>tools</category>
+   <bugs>http://172.31.123.88/nextcloud/bug</bugs>
+   <dependencies>
+       <nextcloud min-version="23" max-version="23" />
+   </dependencies>
+   <navigations>
+       <navigation>
+           <name>Conservazione a Norma</name>
+           <route>conservazionenorma.page.index</route>
+       </navigation>
+   </navigations>
+   <settings>
+       <personal>OCA\ConservazioneNorma\Settings\ConservazioneNormaPersonal</personal>
+       <personal-section>OCA\ConservazioneNorma\Sections\ConservazioneNormaPersonal</personal-section>
+   </settings>
+</info>
