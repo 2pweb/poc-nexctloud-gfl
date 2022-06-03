@@ -1,4 +1,6 @@
 README PROOF OF CONCEPT INTEGRATION NEXTCLOUD WITH CONSERVAZIONE A NORMA (POC NEXTCLOUD)
+DEVELOPED BY 2pWEB.it
+
 ---------------------------------------------------------------------------------
 The file conservazioneanorma.tar needs to be untared from inside of the Nextcloud app dir.
 cd <nextcloud> dir
@@ -41,11 +43,11 @@ From the file list the either a right click or actions menu will show "Invia a C
 Fill out the form for the metadata.
 
 
-PLUGIN SSO LOGIN HAS BEEN INSTALLED
+CORE SSO LOGIN HAS BEEN INSTALLED
 ====================================================
 With the SSO plugin enabled the login page will automatically redirect you to the SSO login page for GFL
 https://sso-staging.giuffre.it/openam/XUI/?realm=gflcloud&spEntityID=https%3A%2F%2Fpoc-nextcloud-gfl.space%2Findex.php%2Fapps%2Fuser_saml%2Fsaml%2Fmetadata&goto=https%3A%2F%2Fsso-staging.giuffre.it%2Fopenam%2FSSOPOST%2FmetaAlias%2Fgflcloud%2Fidp%3FReqID%3DONELOGIN_d56dc7a28943eccac6d5196cdb7b0891c2d41e7d%26index%3Dnull%26acsURL%3Dhttps%253A%252F%252Fpoc-nextcloud-gfl.space%252Findex.php%252Fapps%252Fuser_saml%252Fsaml%252Facs%26spEntityID%3Dhttps%253A%252F%252Fpoc-nextcloud-gfl.space%252Findex.php%252Fapps%252Fuser_saml%252Fsaml%252Fmetadata%26binding%3Durn%253Aoasis%253Anames%253Atc%253ASAML%253A2.0%253Abindings%253AHTTP-POST#login/
 
-Per accedere direttamente la pagina login sarà da utilizzare 
+Per accedere direttamente alla pagina login accedere a:
 https://poc-nextcloud-gfl.space/index.php/login?prova&direct=1
 
